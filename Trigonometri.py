@@ -33,7 +33,7 @@ def cos(x,rady=0,a=85):
     for i in range(a):
         cose+=(((-1)**i)*(x**(2*i)))/fact(2*i)
     return "%.8f" % round(cose,8)
-def imza(a="Canberk Turan",b="Trigonemetri Hesaplayıcı"):
+def imza(a="Canberk Turan",b="Trigonometri Hesaplayıcı"):
     print("#"*30)
     print("#"+" "*round((28-len(b))/2)+b+" "*(round((28-len(b))/2))+"#")
     print("#"+"  "+"Developer:"+a+"   "+"#")
