@@ -1,3 +1,7 @@
+#Kullanmak için dosyayı programınızla aynı klasöre indirip import ettikten sonra 
+#quicksort.hizli(liste) şeklinde kullanmanız yeterli
+#from quicksort import hizli şeklinde import etmeniz durumunda
+#hizli(liste) şeklinde kullanabilirsiniz.
 def hizli(liste):
     if len(liste)<=1:
         return liste
