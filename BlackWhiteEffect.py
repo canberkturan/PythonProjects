@@ -16,4 +16,4 @@ for i in range(WIDTH):
 			img.putpixel((i,j),BLACK)
 		else:
 			img.putpixel((i,j),WHITE)
-img.save(time.strftime("%d-%m-%Y_%H:%M:%S")+".jpg")
+img.save(time.strftime("%d-%m-%Y_%H:%M:%S")+".jpg") 
