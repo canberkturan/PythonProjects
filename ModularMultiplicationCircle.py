@@ -13,6 +13,7 @@ class TimeTable:
 		self.img = Image.new("RGB", (size, size), bg) # empty image
 		self.size = size #image size
 		self.rot = rot #rotate (degree)
+		self.bg = bg #background of image -> (r,g,b) 0-255
 		self.color = color #color of lines -> (r,g,b) 0-255
 		self.padding = padding #padding the circle from frame
 		self.drawCircle() #draw a empty circle
@@ -82,7 +83,7 @@ class TimeTable:
 		"""
 		This function clears the image
 		"""
-		self.img = Image.new("RGB", (self.size, self.size), bg)
+		self.img = Image.new("RGB", (self.size, self.size), self.bg)
 
 	def save(self, path = "lastTable.png"):
 		"""
