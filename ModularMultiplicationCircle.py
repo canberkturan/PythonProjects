@@ -1,5 +1,5 @@
 from PIL import Image, ImageDraw
-import math,os
+import math
 
 
 class TimeTable:
