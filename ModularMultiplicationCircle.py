@@ -1,6 +1,11 @@
 from PIL import Image, ImageDraw
 import math
 
+"""
+   Before Run:
+       -Install PIL(pillow) library -> pip3 install pillow
+"""
+
 
 class TimeTable:
 	def __init__(self, rot=0, size=1080, bg=(0, 0, 0),
