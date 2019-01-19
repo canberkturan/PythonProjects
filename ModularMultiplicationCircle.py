@@ -7,7 +7,7 @@ import math
 """
 
 
-class TimeTable:
+class ModularMultiplicationCircle:
 	def __init__(self, rot=0, size=1080, bg=(0, 0, 0),
 							color=(255, 255, 255), padding=20):
 		self.img = Image.new("RGB", (size, size), bg) # empty image
@@ -67,7 +67,7 @@ class TimeTable:
 			dotTable.append((dotX,dotY))
 		return dotTable
 		
-	def createTable(self, dotCount, mult):
+	def create(self, dotCount, mult):
 		"""
 		This function calls calculateDots and fillLines, and
 		prints an exit message
@@ -92,8 +92,8 @@ class TimeTable:
 		self.img.save(path)
 
 if __name__ == "__main__":
-	t = TimeTable(rot=180, size=2160, color=(200, 0, 0),bg=(255, 255, 255))
-	t.createTable(300, 2)
+	t = ModularMultiplicationCircle(rot=180, size=2160, color=(200, 0, 0),bg=(255, 255, 255))
+	t.create(300, 2)
 	t.save()
 	    
 	    
