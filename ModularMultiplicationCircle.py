@@ -85,7 +85,7 @@ class ModularMultiplicationCircle:
 		"""
 		self.img = Image.new("RGB", (self.size, self.size), self.bg)
 
-	def save(self, path = "lastTable.png"):
+	def save(self, path = "lastcircle.png"):
 		"""
 		This function saves the image with path parameter
 		"""
